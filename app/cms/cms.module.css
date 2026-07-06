@@ -1,0 +1,147 @@
+/* ===========================================================
+   Admin Content Preview — modern editorial theme
+   Accent: warm amber (#D97706) on deep slate-navy (#1E293B)
+=========================================================== */
+
+.container {
+  background: #f1f3f6;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.card {
+  max-width: 1000px;
+  margin: auto;
+  background: #ffffff;
+  padding: 44px 48px;
+  border-radius: 14px;
+  border-top: 4px solid #1e293b;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.title {
+  color: #1e293b;
+  text-align: left;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 28px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 56px;
+  height: 3px;
+  background: #d97706;
+  border-radius: 2px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 32px;
+  display: block;
+  object-fit: cover;
+}
+
+/* ---------- Admin content styling ---------- */
+
+.content h1 {
+  color: #1e293b;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 18px;
+}
+
+.content h2 {
+  color: #1e293b;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 34px 0 14px;
+  padding-left: 14px;
+  border-left: 3px solid #d97706;
+}
+
+.content h3 {
+  color: #475569;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 24px 0 10px;
+}
+
+.content p {
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.content ul,
+.content ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.content li {
+  margin-bottom: 10px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.content a {
+  color: #d97706;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.content a:hover {
+  border-bottom-color: #d97706;
+}
+
+.content a:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.content blockquote {
+  margin: 20px 0;
+  padding: 14px 20px;
+  background: #f8fafc;
+  border-left: 3px solid #cbd5e1;
+  color: #64748b;
+  font-style: italic;
+  border-radius: 0 8px 8px 0;
+}
+
+.content code {
+  background: #f1f5f9;
+  color: #1e293b;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+}
+
+.content hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 32px 0;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 600px) {
+  .container { padding: 24px 12px; }
+  .card { padding: 28px 22px; border-radius: 12px; }
+  .title { font-size: 1.4rem; }
+  .content h2 { font-size: 1.1rem; }
+}

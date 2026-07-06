@@ -1,0 +1,121 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(246, 196, 83, 0.16), transparent 30%),
+    radial-gradient(circle at 90% 8%, rgba(191, 232, 255, 0.28), transparent 26%),
+    linear-gradient(180deg, #fffdf5 0%, #f3faef 100%);
+  color: #1f3325;
+}
+
+.card {
+  width: min(440px, 100%);
+  padding: 36px 28px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(47, 143, 70, 0.16);
+  border-radius: 22px;
+  box-shadow: 0 24px 58px rgba(36, 77, 47, 0.12);
+}
+
+.icon {
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #e9f7df;
+  color: #2f8f46;
+  font-size: 42px;
+  box-shadow: 0 14px 30px rgba(47, 143, 70, 0.18);
+  animation: pop 0.5s ease-in-out;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card h1 {
+  margin: 0 0 10px;
+  color: #244d2f;
+  font-size: clamp(26px, 5vw, 34px);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.card p {
+  margin: 0;
+  color: #66745f;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.orderBox {
+  margin: 22px 0;
+  padding: 18px;
+  border: 1px solid rgba(47, 143, 70, 0.14);
+  border-radius: 16px;
+  background: #fff8df;
+  color: #244d2f;
+}
+
+.orderBox p {
+  color: #244d2f;
+  font-weight: 700;
+}
+
+.buttons {
+  display: grid;
+  gap: 12px;
+}
+
+.homeBtn,
+.orderBtn {
+  width: 100%;
+  min-height: 46px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.homeBtn {
+  border: 0;
+  background: linear-gradient(135deg, #2f8f46, #79b84a);
+  color: #ffffff;
+  box-shadow: 0 12px 26px rgba(47, 143, 70, 0.24);
+}
+
+.orderBtn {
+  border: 1px solid rgba(47, 143, 70, 0.28);
+  background: #ffffff;
+  color: #2f8f46;
+}
+
+.homeBtn:hover,
+.orderBtn:hover {
+  transform: translateY(-2px);
+}
+
+.homeBtn:hover {
+  box-shadow: 0 16px 34px rgba(47, 143, 70, 0.32);
+}
+
+.orderBtn:hover {
+  background: #f6fbf2;
+}

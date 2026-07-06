@@ -1,0 +1,236 @@
+/* app/about/about.module.css */
+
+.page {
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: sans-serif;
+}
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.heroTitle {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.heroSubtitle {
+  font-size: 20px;
+  opacity: 0.85;
+}
+
+/* ── Section ── */
+.section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 36px;
+  color: #111827;
+}
+
+/* ── Story ── */
+.storyGrid {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.storyImg {
+  flex: 1 1 300px;
+}
+
+.storyImg img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.storyText {
+  flex: 1 1 300px;
+}
+
+.storyText h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.storyText p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+/* ── Stats ── */
+.statsSection {
+  background: #2563eb;
+  padding: 60px 20px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.statCard {
+  text-align: center;
+  color: #fff;
+}
+
+.statIcon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.statCard h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 4px;
+}
+
+.statCard p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* ── Values ── */
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.valueCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+}
+
+.valueCard:hover {
+  transform: translateY(-4px);
+}
+
+.valueCard span {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.valueCard h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.valueCard p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* ── Team ── */
+.teamSection {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.teamCard {
+  text-align: center;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 28px 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.teamEmoji {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.teamCard h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.teamCard p {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* ── CTA ── */
+.cta {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cta p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+.ctaBtn {
+  display: inline-block;
+  background: #fff;
+  color: #16a34a;
+  padding: 12px 32px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.ctaBtn:hover {
+  transform: scale(1.05);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .heroTitle { font-size: 32px; }
+  .heroSubtitle { font-size: 16px; }
+  .storyGrid { flex-direction: column; }
+}

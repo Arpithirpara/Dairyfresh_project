@@ -1,0 +1,234 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo a {
+  text-decoration: none;
+  color: #1e88e5;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Navigation */
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #0d47a1;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navLinks a:hover {
+  color: #1e88e5;
+}
+
+.activeLink {
+  color: #1e88e5 !important;
+  font-weight: 700;
+}
+
+/* Right Side Actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search */
+.searchInput {
+  width: 220px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.searchInput:focus {
+  border-color: #1e88e5;
+  box-shadow: 0 0 5px rgba(30, 136, 229, 0.3);
+}
+
+.searchBtn {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #1e88e5, #0d47a1);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ✅ Cart button — position relative badge ke liye zaroori */
+.cartBtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #0d47a1;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* ✅ Jab cart mein items hon — background aur color change */
+.cartBtn:has(.cartBadge) {
+  background: #e3f2fd;
+  color: #1e88e5;
+}
+
+.cartBtn:hover {
+  background: #bbdefb;
+  color: #0d47a1;
+}
+
+/* ✅ Red badge — count dikhata hai */
+.cartBadge {
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 5px;
+  border-radius: 99px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  animation: badgePop 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes badgePop {
+  0%   { transform: scale(0.3); opacity: 0; }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+/* Account Button */
+.accountBtn {
+  text-decoration: none;
+  background-color: #1e88e5;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.accountBtn:hover {
+  background-color: #0d47a1;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+  color: #0d47a1;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: 0.3s ease-in-out;
+  z-index: 1000;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.show {
+  right: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #0d47a1;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #e3f2fd;
+  color: #1e88e5;
+}
+
+.activeSidebarLink {
+  color: #1e88e5 !important;
+  font-weight: 700;
+}
+
+/* Close Button */
+.close {
+  align-self: flex-end;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  color: #0d47a1;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navLinks,
+  .actions {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+}

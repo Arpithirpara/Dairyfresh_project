@@ -1,0 +1,274 @@
+/* app/contact/contact.module.css */
+
+.page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(135deg, #1e3a5f, #2563eb);
+  padding: 70px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.heroTitle {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.heroSubtitle {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* ── Container ── */
+.container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* ── Info Section ── */
+.infoSection {
+  flex: 1 1 320px;
+}
+
+.infoSection h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.infoDesc {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.infoCards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.infoCard {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.infoCard span {
+  font-size: 24px;
+  margin-top: 2px;
+}
+
+.infoCard h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 4px;
+}
+
+.infoCard p {
+  font-size: 13px;
+  color: #64748b;
+  margin: 2px 0;
+}
+
+/* ── Social ── */
+.social h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.socialBtn {
+  padding: 8px 16px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.socialBtn:hover {
+  background: #dbeafe;
+}
+
+/* ── Form Section ── */
+.formSection {
+  flex: 1 1 400px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.formSection h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formGroup label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #111827;
+  outline: none;
+  transition: border 0.2s;
+  background: #f8fafc;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: #2563eb;
+  background: #fff;
+}
+
+.formGroup textarea {
+  resize: vertical;
+}
+
+.submitBtn {
+  padding: 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submitBtn:hover {
+  background: #1d4ed8;
+}
+
+/* ── Success ── */
+.successMsg {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.successMsg span {
+  font-size: 56px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.successMsg h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 8px;
+}
+
+.successMsg p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.backBtn {
+  padding: 10px 24px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ── Map ── */
+.mapSection {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.mapTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+.mapPlaceholder {
+  background: #e2e8f0;
+  border-radius: 16px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.mapPlaceholder span {
+  font-size: 48px;
+}
+
+.mapPlaceholder p {
+  font-size: 15px;
+  color: #64748b;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .heroTitle { font-size: 30px; }
+  .formRow { grid-template-columns: 1fr; }
+  .container { flex-direction: column; }
+}

@@ -37,7 +37,7 @@
     "**/*.mts",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
-, "app/register/page.js", "app/login/page.js", "components/footer.js"  ],
+, "app/register/page.js", "app/login/page.js", "components/footer.js", "components/Navbar.js"  ],
   "exclude": [
     "frontend/node_modules"
   ]

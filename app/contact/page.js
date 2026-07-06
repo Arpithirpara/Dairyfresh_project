@@ -2,8 +2,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./contact.module.css";
-import API_URL from "../../../admin/config";
-
+import API_URL from "../../config";
 export default function ContactPage() {
 const [form, setForm] = useState({
   fullName: "",

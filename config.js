@@ -1,3 +1,2 @@
-const API_URL = "http://localhost:3002";
-
+const API_URL = "https://dairy-fresh-backend.onrender.com";
 export default API_URL;

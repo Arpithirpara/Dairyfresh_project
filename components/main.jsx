@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import styles from "./main.module.css";
 import Link from "next/link";
+import API_URL from "../config";
 
 export default function Home() {
   const [slides, setSlides] = useState([]);
@@ -12,7 +13,7 @@ export default function Home() {
     const getBanners = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3002/api/benner/getall"
+          `${API_URL}/api/benner/getall`,
         );
         const data = await response.json();
         console.log("Banner Data:", data);
